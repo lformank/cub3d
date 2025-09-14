@@ -6,7 +6,7 @@
 #    By: lformank <lformank@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/14 11:34:15 by lformank          #+#    #+#              #
-#    Updated: 2025/09/14 15:09:26 by lformank         ###   ########.fr        #
+#    Updated: 2025/09/14 17:10:28 by lformank         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ OBJ_DIR = obj
 LIB_DIR = libft
 MLX_DIR = minilibx-linux
 
-SUBJS = parse.c
+SUBJS = parse_map.c main.c errors.c
 
 SUBJS := $(addprefix $(SUB_DIR)/,$(SUBJS))
 OBJS = $(SUBJS: $(SUB_DIR)/%.c=$(OBJ_DIR)/%.o)

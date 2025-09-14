@@ -1,33 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cub3d.h                                            :+:      :+:    :+:   */
+/*   parse_map.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lformank <lformank@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/14 11:00:42 by lformank          #+#    #+#             */
-/*   Updated: 2025/09/14 17:33:35 by lformank         ###   ########.fr       */
+/*   Created: 2025/09/14 14:31:15 by lformank          #+#    #+#             */
+/*   Updated: 2025/09/14 17:33:37 by lformank         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CUB3D_H
-# define CUB3D_H
+#include <cub3d.h>
 
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <string.h>
-# include <sys/time.h>
-# include <math.h>
-# include <sys/stat.h>
-# include <fcntl.h>
-
-typedef struct s_input
+char**	parse_map(int ac, char **av)
 {
-	char	**map;
-	char	**textures;
-	int		*floor[4];
-	int		*ceiling[4];
-}t_input;
-
-#endif
+	// check_borders(av);
+}

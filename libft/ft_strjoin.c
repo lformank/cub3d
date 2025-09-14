@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lformank <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lformank <lformank@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 12:09:52 by lformank          #+#    #+#             */
-/*   Updated: 2024/06/09 13:25:52 by lformank         ###   ########.fr       */
+/*   Updated: 2025/09/14 17:41:20 by lformank         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	while (s2[i] != '\0')
 		dest[j++] = s2[i++];
 	dest[j] = '\0';
+	free(s1);
 	return (dest);
 }
 
